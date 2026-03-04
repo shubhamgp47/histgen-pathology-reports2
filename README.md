@@ -8,9 +8,12 @@ types with standardized CAP protocol reports. We aim to answer the following res
 RQ1: Does slide-level feature encoding with pretrained aggregation outperform
 patch-level encoding with learned hierarchical aggregation for generating pathology
 reports from WSIs?
+
 RQ2: How does the scale of foundation model pretraining (model capacity and corpus
 size) affect downstream report generation performance?
+
 RQ3: Does a multimodal vision-language foundation model with slide-level encoding
 outperform vision-only patch-level foundation models for automated report generation?
+
 RQ4: What architectural and optimization adaptations are required when fine tuning
 HistGen framework on frozen pretrained foundation model used as feature extractor?
