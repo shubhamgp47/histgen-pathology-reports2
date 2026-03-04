@@ -1,5 +1,6 @@
 import pandas as pd
 from eval import REG_Evaluator
+import os
 
 def evaluate_csv_direct(csv_path, embedding_model='dmis-lab/biobert-v1.1', spacy_model='en_core_sci_lg'):
     # Load CSV directly
@@ -15,11 +16,13 @@ def evaluate_csv_direct(csv_path, embedding_model='dmis-lab/biobert-v1.1', spacy
     results_df = pd.DataFrame([{
         "Average Ranking Score": score
     }])
+    out_path = os.path.join(os.path.dirname(csv_path), "results.csv")
     results_df.to_csv("results.csv", index=False)
     
     print(f"REG Score: {score:.4f} (n={len(eval_pairs)})")
     return score
 
-csv_path = '/home/woody/iwi5/iwi5204h/HistGen/MyExperiments/REG2025_Format/seed43/TITAN/17/gen_vs_gt.csv'
+# Change this path to load the respective gen_vs_gt.csv files 
+csv_path = '/home/woody/iwi5/iwi5204h/HistGen/Data/TestResult_HistGen/seed43/17_seed43/Best31/gen_vs_gt.csv'
 
 score = evaluate_csv_direct(csv_path)
