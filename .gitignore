@@ -1,7 +1,8 @@
-.pth
-.pt
-.ckpt
-.tiff
-.tif
-.h5
-.pkl
+Ignore the following extensions
+*.pth
+*.pt
+*.ckpt
+*.tiff
+*.tif
+*.h5
+*.pkl
