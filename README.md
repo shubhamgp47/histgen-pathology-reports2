@@ -28,8 +28,6 @@ HistGen framework on frozen pretrained foundation model used as feature extracto
 
 ![Model Evaluation](Results/Model%20Evaluation/all_models_overview.png)
 
-![Model Evaluation](Results/Model%20Evaluation/all_models_overview.html)
-
 ![Improvement over baseline](Results/Improvement%20Heatmap/heatmap_improvement_over_baseline.png)
 
 
